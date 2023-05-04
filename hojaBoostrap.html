@@ -1,0 +1,98 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <title>Hoja De Vida Con Javascript</title>
+</head>
+
+<body>
+
+    <center><img style="width: 20%;" src="https://pbs.twimg.com/media/FoaHWdnWYAI82zF.jpg" />
+        <br>
+        <h2>Yeiner Anaya</h2>
+        <hr>
+        <button onclick="infoPer()" class="btn btn-success">Informacion Personal</button>
+        <button onclick="estudios()" class="btn btn-success">Estudios</button>
+        <button onclick="experiencia()" class="btn btn-success">Experiencia Laboral</button>
+        <button onclick="contacto()" class="btn btn-success">Contacto</button>
+        <button onclick="descripcion()" class="btn btn-success">Descripcion</button>
+        <hr>
+    </center>
+    <div class="container" id="div_informacion" name="div_informacion"></div>
+
+    <script>
+        ////////////////////////
+        function infoPer() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul >"
+                + "<li><strong>Nombres:</strong> Yeiner Daniel</li>"
+                + "<li><strong>Apellidos:</strong> Anaya Duarte</li>"
+                + "<li><strong>Código:</strong> 1152086</li>"
+                + "<li><strong>Direccion:</strong> Calle 0B Siglo XXI, Cucuta, Colombia</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+
+        ////////////////////////
+        function estudios() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul >"
+                + "<li><strong>Primaria:</strong> Col Integrado Simon Bolivar (2013)</li>"
+                + "<li><strong>Secundaria:</strong> IE San Francisco De Sales (2019)</li>"
+                + "<li><strong>Técnico:</strong> Desarrollo de Software IESFS (2019)</li>"
+                + "<li><strong>Diplomado:</strong> Diplomado de Programación MinTic (2022)</li>"
+                + "<li><strong>Pregrado:</strong> Ingeniería de Sistemas (En Curso)</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+
+        ////////////////////////
+        function experiencia() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul >"
+                + "<li>En términos de experiencia laboral. No hay experiencia laboral</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+
+        ////////////////////////
+        function contacto() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul >"
+                + "<li><strong>Telefono:</strong> 317 4114297</li>"
+                + "<li><strong>Telefono:</strong> 320 8707170</li>"
+                + "<li><strong>E-Mail:</strong> yeinerdanielad@ufps.edu.co</li>"
+                + "<li><strong>E-Mail:</strong> yeinerd@uninorte.edu.co</li>"
+                + "<li><strong>E-Mail:</strong> yeida06@outlook.com</li>"
+                + "<li><strong>GitHub:</strong> <a href='https://github.com/yeinerd06'>https://github.com/yeinerd06</a></li>"
+                + "<li><strong>GitHub:</strong> <a href='https://github.com/ydanaya'>https://github.com/ydanaya</a></li>"
+                + "<li><strong>GitLab:</strong> <a href='https://gitlab.com/ydanaya'>https://gitlab.com/ydanaya</a></li>"
+                + "<style>a{textDecoration:none;color:#6A9244;}</style>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+
+        ////////////////////////
+        function descripcion() {
+            var inf = "<div class='alert alert-success'>"
+                + "<ul >"
+                + "<li> No sé ni por qué sigo con vida</li>"
+                + "</ul>"
+                + "</div>";
+            $("#div_informacion").html(inf);
+        }
+    </script>
+
+</body>
+
+</html>
